@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <style type="text/css">
+        input:invalid {
+            border: red solid 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="major">ชื่อเต็ม / ชื่อย่อของสาขาวิชา : </label>
+        <input type="text" id="major" name="major"> <br /><br />
+
+        <label for="money">จำนวนเงินที่จะโอน : </label>
+        <input type="number" id="money" name="money" min="1" max="1000000"> <br /><br />
+
+        <label for="food">อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย : </label>
+        <p>1. <input type="text" id="fav1_food" name="food" placeholder="อันดับ 1"> </p>
+        <p>2. <input type="text" id="fav2_food" name="food" placeholder="อันดับ 2"> </p>
+        <p>3. <input type="text" id="fav3_food" name="food" placeholder="อันดับ 3"> </p>
+        <p>4. <input type="text" id="fav4_food" name="food" placeholder="อันดับ 4"> </p>
+        <p>5. <input type="text" id="fav5_food" name="food" placeholder="อันดับ 5"> </p><br />
+
+        <label for="bill">ค่าไฟฟ้า 3 เดือนที่ผ่านมา : </label>
+        <input type="number" id="bill" name="bill" min="0" step="0.01"> <br/><br/>
+
+        <label for="id_card">รหัสบัตรประชาชน :</label>
+        <input type="text" id="id_card" name="id_card"> <br/><br/>
+
+        <label for="book">ความพึงพอใจของหนังสือเล่มนี้ : </label>
+        <input type="range" id="fav_book" name="book" min="0" max="5" step="1"> <br/><br/>
+
+        <label for="illness">อาการป่วย : </label> <br />
+        <textarea id="illness" name="illness" rows="5" cols="50"></textarea> <br/><br/>
+
+        <label for="vaccine">ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่ : </label>
+        <input type="radio" id="yes" name="vaccine" value="yes">
+        <label for="vaccine">YES</label>
+        <input type="radio" id="no" name="vaccine" value="no">
+        <label for="vaccine">NO</label> <br /><br />
+
+        <label for="password">รหัสผ่าน : </label>
+        <input type="password" id="password" name="password"> <br /><br />
+
+        <label for="class">เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน : </label><br />
+        <input type="time" id="class_start" name="class">
+        <label for="class">เวลาเริ่มเรียน </label>
+        <input type="time" id="class_end" name="class">
+        <label for="class">เวลาเลิกเรียน </label> <br /><br />
+
+        <label for="doctor">วัน-เวลา ที่ต้องไปพบแพทย์ : </label>
+        <input type="datetime-local" id="doctor" name="doctor"> <br /><br />
+
+        <input type="submit" value="submit">
+
+    </form>
+
+</body>
+
+</html>

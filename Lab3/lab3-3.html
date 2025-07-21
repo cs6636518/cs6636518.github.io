@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            text-align: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>เข้าสู่ระบบ</h1>
+        <form action="lab3-3.1.html">
+            <table>
+                <tr>
+                    <td><label for="username:">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password:">Password:</label></td>
+                    <td><input type="text" id="password" name="password" required></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><label for="number">กรุณาพิมพ์ตามตัวเลขที่กำหนด:<br>1559</label><br>
+                        <input
+                        type="text"
+                        id="number"
+                        name="number"
+                        pattern="1559" required>
+                    </td>
+                </tr>
+            </table>
+
+            <br/>
+            
+            <input
+                type="image"
+                src="img/login.png" alt="submit"
+                width="70"
+                height="70"
+            >
+        </form>
+    </body>
+</html>
