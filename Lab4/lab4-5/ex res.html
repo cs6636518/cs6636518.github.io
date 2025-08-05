@@ -1,0 +1,67 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<style>
+		body{
+			margin: 0;
+		}
+
+		section{
+			display: flex;
+			flex-direction: column;
+		}
+		
+		header{
+			background-color: black;
+			color: white;
+			text-align: center;
+			padding: 10px;
+		}
+
+		main{
+			background-color: gainsboro;
+			padding: 10px;
+		}
+
+		aside{
+			background-color: cornflowerblue;
+			padding: 10px;
+		}
+
+		@media (min-width : 600px) {
+			section {
+				flex-direction: row;
+			}
+
+			header, main, aside {
+				flex: 1;
+			}
+
+			header {
+				flex: 1;
+				order: 1;
+			}
+
+			main{
+				flex: 2;
+				order: 2;
+			}
+			aside{
+				flex: 1;
+				order: 3;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<header>Menu1<br>Menu2<br>Menu3<br></header>
+		<main>In publishing, art, and communication, … as speech, writing or any of various arts".</main>
+		<aside>advertising<br>advertising<br>advertising<br></aside>
+	</section>
+</body>
+
+</html>
