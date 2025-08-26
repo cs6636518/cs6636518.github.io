@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        function addData() {
+            let name = document.getElementById("name").value
+            let address = document.getElementById("address").value
+            let phone = document.getElementById("phone").value
+
+            let table = document.getElementById("tb");
+            let row = table.insertRow()
+
+            // สร้างเซลล์แต่ละช่อง และใส่ข้อมูล
+            row.insertCell(0).innerHTML = name;
+            row.insertCell(1).innerHTML = address;
+            row.insertCell(2).innerHTML = phone;
+
+            // ล้างค่า input หลังจากเพิ่ม
+            document.getElementById("name").value = "";
+            document.getElementById("address").value = "";
+            document.getElementById("phone").value = "";
+        }
+    </script>
+
+</head>
+
+<body>
+    <form>
+        <label>ชื่อลูกค้า : </label>
+        <input type="text" id="name"><br />
+
+        <label>ที่อยู่ : </label>
+        <input type="text" id="address"><br />
+
+        <label>โทรศัพท์ : </label>
+        <input type="text" id="phone"><br />
+
+        <input type="button" value="เพิ่ม" onclick="addData()">
+    </form>
+
+    <table border="1" id="tb">
+        <th>ชื่อลูกค้า</th>
+        <th>ที่อยู่</th>
+        <th>โทรศัพท์</th>
+    </table>
+</body>
+
+</html>

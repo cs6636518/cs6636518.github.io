@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .style1 {
+            color: green;
+        }
+
+        .style2 {
+            color: red;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var msg = document.getElementById("errormsg");
+
+            var Input1 = document.getElementById("pass1");
+            var Input2 = document.getElementById("pass2");
+            var p1 = Input1.value;
+            var p2 = Input2.value;
+
+            for (let i = 0; i < p1.length; i++) {
+                if (p1 != p2) {
+                    msg.className = "style2";
+                    msg.innerHTML = "Incorrect"
+                    break;
+                }
+                if (p1 == p2) {
+                    var check = true;
+                }
+            }
+            if (check == true) {
+                msg.className = "style1";
+                msg.innerHTML = "Correct"
+            }
+            return;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Register</h1>
+    Username: <input type="text"><br>
+    Password: <input type="text" id="pass1"><br>
+    Re-type Password: <input type="text" id="pass2"><br>
+    <input type="submit" onclick="checkPassword()">
+    <div id="errormsg"></div>
+</body>
+
+</html>

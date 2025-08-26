@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6no1.2</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>ชื่อลูกค้า :</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label>ที่อยู่ :</label>
+            <input type="text" id="address">
+        </div>
+        <div>
+            <label>โทรศัพท์ :</label>
+            <input type="tel" id="phone">
+        </div>
+
+        <input type="button" value="เพิ่ม" id="addtable">
+    </form>
+    <br>
+
+    <table border="1" id="tb">
+        <th>ชื่อลูกค้า</th>
+        <th>ที่อยู่</th>
+        <th>โทรศัพท์</th>
+    </table>
+
+    <script >
+        function add() {
+            let atable = document.getElementById('tb')
+
+            let atr = document.createElement('tr')
+            let nametd = document.createElement('td')
+            let addrtd = document.createElement('td')
+            let teltd = document.createElement('td')
+
+            nametd.innerHTML = document.getElementById('name').value;
+            addrtd.innerHTML = document.getElementById('address').value;
+            teltd.innerHTML = document.getElementById('phone').value;
+
+            atr.appendChild(nametd)
+            atr.appendChild(addrtd)
+            atr.appendChild(teltd)
+
+            atable.appendChild(atr)
+        }
+
+        let btn = document.getElementById('addtable')
+        btn.addEventListener("click", add)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function colorMgs(input) {
+            if (input.value != "") {
+                input.style.color = "green"
+            }
+        }
+        window.onload = function () {
+            var Name = document.getElementById("name");
+            var Age = document.getElementById("age");
+            var Day = document.getElementById("day");
+
+            Name.onblur = function () { colorMgs(Name) };
+            Age.onblur = function () { colorMgs(Age) };
+            Day.onblur = function () { colorMgs(Day) };
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        Name :
+        <input type="text" id="name"><br>
+        Age :
+        <input type="text" id="age"><br>
+        Birthdate :
+        <input type="text" id="day"><br>
+    </form>
+</body>
+
+</html>
