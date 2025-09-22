@@ -1,4 +1,5 @@
 <?php include "connect.php" ?>
+
 <?php
 $stmt = $pdo->prepare("INSERT INTO member VALUES (?, ?, ?, ?, ?, ?)");
 $stmt->bindParam(1, $_POST["username"]);
@@ -13,5 +14,5 @@ $username = $_POST["username"];
 
 // header คือฟังก์ชันที่จัดการส่งข้อมูลไปยังไฟล์ที่กำหนด (send redirect)
 // ในที่นี้ ให้เปิดเว็บหน้า detail_member.php พร้อมกับส่ง username แนบไปกับ URL
-header("location: 5detail_member.php?username=" . $username);
+header("location: member_detail_5.php?username=" . $username);
 ?>

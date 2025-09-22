@@ -7,7 +7,7 @@
         function confirmDelete(username) { // ฟังก์ชันจะถูกเรียกถ้าผู้ใช้คลิกที่่ link ลบ
             var ans = confirm("ต้องการลบusername " + username); // แสดงกล่องถามผู้ใช ้
             if (ans == true) // ถ้าผู้ใชกด ้ OK จะเข ้าเงื่อนไขนี้
-                document.location = "6delete_member.php?username=" + username; // ส่งรหัสสินค้าไปให้ไฟล์ delete.php
+                document.location = "delete_member_6.php?username=" + username; // ส่งรหัสสินค้าไปให้ไฟล์ delete.php
         }
     </script>
 </head>

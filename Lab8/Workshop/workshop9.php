@@ -16,7 +16,7 @@
                 echo "address : " . $row["address"] . "<br>";
                 echo "mobile : " . $row["mobile"] . "<br>";
                 echo "email : " . $row["email"] . "<br>";
-                echo "<a href='9editform_member.php?username=" . $row["username"] . "'>แก้ไข</a>";
+                echo "<a href='editform_member_9.php?username=" . $row["username"] . "'>แก้ไข</a>";
                 echo "<hr>\n";
             }
         ?>

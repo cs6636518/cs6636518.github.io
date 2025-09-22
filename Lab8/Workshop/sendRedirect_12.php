@@ -1,4 +1,13 @@
-<?php include "connect.php" ?>
+<?php
+try {
+    $pdo = new PDO("mysql:host=localhost;dbname=168DB_57;charset=utf8", "168DB57", "qhfUiQXU");
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // echo "Connected successfully";
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+?>
+
 <?php
     $stmt = $pdo->prepare("INSERT INTO member VALUES (?, ?, ?, ?, ?, ?)");
     $stmt->bindParam(1, $_POST["username"]);

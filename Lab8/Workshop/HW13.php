@@ -12,7 +12,7 @@
         echo "ชื่อสินค้า : " . $row ["pname"] . "<br>";
         echo "รายละเอียดสินค้า : " . $row ["pdetail"] . "<br>";
         echo "ราคา: " . $row ["price"] . " บาท <br>";
-        echo "<a href='13editform_product.php?pid=" . $row ["pid"] . "'>แก้ไข</a>";
+        echo "<a href='editform_product_13.php?pid=" . $row ["pid"] . "'>แก้ไข</a>";
         echo "<hr>";
         echo "</div>";
     }

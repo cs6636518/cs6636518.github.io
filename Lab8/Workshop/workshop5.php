@@ -13,7 +13,7 @@
         ?>
         <?php while ($row = $stmt->fetch()) : ?>
             <div style="padding: 15px; text-align: center">
-                <a href="5member_detail.php?username=<?= $row["username"] ?>">
+                <a href="member_detail_5.php?username=<?= $row["username"] ?>">
                     <img src='member_photo/<?= $row["username"] ?>.jpg' width='100'>
                 </a><br><br>
                 <?= "ชื่อสมาชิก : " . $row["name"] ?><br>

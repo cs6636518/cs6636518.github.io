@@ -30,6 +30,6 @@
     }
 
     // กลับไปหน้าแสดงรายการสินค้า
-    header("location: 10show_productlist.php");
+    header("location: show_productlist_10.php");
     exit();
 ?>
